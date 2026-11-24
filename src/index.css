@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  background-color: #0b1220;
+  color: #f8fafc;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@layer components {
+  .sub-weather-cards {
+    @apply rounded-lg bg-[#253750] mt-4 w-[170px] sm:w-[150px] h-[100px] flex flex-col justify-center items-center gap-3 md:text-xl;
+  }
+}
